@@ -179,24 +179,42 @@
                      <div class="col-sm-6">
   <div class="d-flex align-items-center mb-4">
     
-    <!-- Plot Planning Logo -->
-    <div class="mr-3" 
+      <!-- Plot Planning Wireframe Logo -->
+    <div class="mr-3"
          style="
            width:40px; 
            height:40px; 
-           display:grid; 
-           grid-template-columns:1fr 1fr; 
-           grid-template-rows:1fr 1fr; 
-           gap:2px;
-           border-radius:6px;
-           overflow:hidden;
+           position:relative; 
+           border:2px solid #bfa14a;   /* gold outer border */
+           border-radius:4px;
          ">
-      <div style="background:#8B5A2B;"></div>     <!-- Brown -->
-      <div style="background:#6AA84F;"></div>     <!-- Dark Green -->
-      <div style="background:#A9D66D;"></div>     <!-- Light Green -->
-      <div style="background:#7BB661;"></div>     <!-- Medium Green -->
-    </div>
+      <!-- Vertical Divider -->
+      <div style="
+           position:absolute; 
+           left:55%; 
+           top:0; 
+           bottom:0; 
+           border-left:2px solid #bfa14a;
+      "></div>
 
+      <!-- Horizontal Divider (bottom section) -->
+      <div style="
+           position:absolute; 
+           left:55%; 
+           bottom:45%; 
+           right:0; 
+           border-bottom:2px solid #bfa14a;
+      "></div>
+
+      <!-- Small Vertical Split inside right-bottom -->
+      <div style="
+           position:absolute; 
+           left:77%; 
+           bottom:0; 
+           top:55%; 
+           border-left:2px solid #bfa14a;
+      "></div>
+    </div>
     <!-- Text -->
     <h5 class="text-truncate m-0">Plot Planning</h5>
   </div>
