@@ -117,23 +117,41 @@
     <div class="row justify-content-center g-5">
 
       <!-- Project 1 -->
-      <div class="col-lg-4 col-md-6 mb-4">
-        <div class="card border-0 shadow-lg h-100" data-bs-toggle="modal" data-bs-target="#project1Modal" style="cursor: pointer;">
-          <img 
-            src="https://raw.githubusercontent.com/DivyeshBagri/R.K/master/img/cam5%20001.png"
-            class="card-img-top img-fluid"
-            alt="R.K. Sharnam Kalyanpur"
-            style="object-fit: cover; height: 320px; border-radius: 10px 10px 0 0;"
-          >
-          <div class="card-body text-center py-4">
-            <h4 class="card-title mb-3">R.K. Sharnam Kalyanpur</h4>
-            <p class="card-text text-muted px-3">
-              A modern housing project offering sustainable living and community spaces.
-            </p>
-          </div>
-        </div>
+<div class="col-lg-4 col-md-6 mb-4">
+  <div class="card border-0 shadow-lg h-100 text-center">
+    
+    <!-- Image -->
+    <img 
+      src="https://raw.githubusercontent.com/DivyeshBagri/R.K/master/img/cam5%20001.png"
+      class="card-img-top img-fluid"
+      alt="R.K. Sharnam Kalyanpur"
+      style="object-fit: cover; height: 320px; border-radius: 10px 10px 0 0;"
+    >
+
+    <!-- Card Body -->
+    <div class="card-body d-flex flex-column justify-content-between py-4">
+      <div>
+        <h4 class="card-title mb-3">R.K. Sharnam Kalyanpur</h4>
+        <p class="card-text text-muted px-3">
+          A modern housing project offering sustainable living and community spaces.
+        </p>
       </div>
 
+      <!-- Know More Button -->
+      <div class="mt-3">
+        <button 
+          type="button" 
+          class="btn btn-outline-primary px-4 py-2 fw-semibold"
+          data-bs-toggle="modal" 
+          data-bs-target="#project1Modal"
+        >
+          Know More
+        </button>
+      </div>
+    </div>
+
+  </div>
+</div>
       <!-- Project 2 -->
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card border-0 shadow-lg h-100" data-bs-toggle="modal" data-bs-target="#project2Modal" style="cursor: pointer;">
@@ -175,7 +193,7 @@
 </div>
 
 <!-- ===== Project 1 Modal ===== -->
-<!-- ===== Project 1 Modal (Enhanced Layout) ===== -->
+<!-- ===== Project 1 Modal (Final Polished Layout) ===== -->
 <div class="modal fade" id="project1Modal" tabindex="-1" aria-labelledby="project1ModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-xl">
     <div class="modal-content border-0">
@@ -188,44 +206,54 @@
           alt="R.K. Sharnam Kalyanpur"
         >
 
-        <!-- Modal Details Section -->
-        <div class="p-4 bg-white text-start">
-          <h3 class="fw-bold mb-4 text-center">R.K. Sharnam Kalyanpur</h3>
-          <p class="text-muted text-center mb-4">
+        <!-- Project Details Section -->
+        <div class="p-5 bg-white">
+          <h3 class="fw-bold text-center mb-4 text-uppercase" style="color:#2c3e50;">
+            R.K. Sharnam Kalyanpur
+          </h3>
+          <p class="text-muted text-center mb-5 fs-5">
             A modern housing project offering sustainable living and community spaces designed for a comfortable lifestyle.
           </p>
 
           <div class="row align-items-start">
             
-            <!-- Left Column: QR Code Placeholder -->
-            <div class="col-md-4 text-center mb-4 mb-md-0">
-              <div class="border rounded-3 p-4 d-inline-block bg-light">
-                <div style="width: 150px; height: 150px; background-color: #f0f0f0; border: 1px dashed #aaa; margin: 0 auto 10px;"></div>
-                <p class="fw-semibold mb-0">RERA Registration No.</p>
-                <p class="text-muted small">CG-RERA-XXXXXX-2025</p>
+            <!-- Left Column: QR Image -->
+            <div class="col-md-4 text-center mb-5 mb-md-0">
+              <div class="p-4 rounded-4 shadow-sm bg-light d-inline-block">
+                <!-- Replace this with your actual QR image -->
+                <img 
+                  src="https://via.placeholder.com/180x180.png?text=QR+Code"
+                  alt="RERA QR Code"
+                  class="img-fluid mb-3 rounded-3"
+                  style="width:180px; height:180px; object-fit:cover;"
+                >
+                <h6 class="fw-bold text-secondary mb-1">RERA Registration No.</h6>
+                <p class="fw-semibold text-dark mb-0">CG-RERA-XXXXXX-2025</p>
               </div>
             </div>
 
             <!-- Right Column: Project Details -->
             <div class="col-md-8">
-              <h5 class="fw-bold mb-3">Project Highlights:</h5>
-              <ul class="text-muted">
-                <li>On Premium location of Dongargarh – Chichola State highway.</li>
-                <li>All Legal Permissions already granted from:
-                  <ul>
-                    <li>Layout Approved From TNCP Rajnandgaon.</li>
-                    <li>Diversion from SDM Dongargarh.</li>
-                    <li>NOC from PWD, CSPDCL etc.</li>
+              <h4 class="fw-bold mb-3" style="color:#0d6efd;">Project Highlights</h4>
+              <ul class="list-unstyled text-muted fs-6">
+                <li class="mb-2"><strong>•</strong> On premium location of <strong>Dongargarh – Chichola State Highway</strong>.</li>
+                <li class="mb-2">
+                  <strong>•</strong> All legal permissions already granted from:
+                  <ul class="mt-2">
+                    <li>Layout Approved From TNCP Rajnandgaon</li>
+                    <li>Diversion from SDM Dongargarh</li>
+                    <li>NOC from PWD, CSPDCL, etc.</li>
                   </ul>
                 </li>
-                <li>Diverted 47 Plots of Various sizes.</li>
-                <li>2 well planned gardens with approx. 4100 Sqft & 3440 Sqft area.</li>
-                <li>25 Ft & 30 Ft Wide C.C. Roads.</li>
-                <li>Electrification as per CSPDCL.</li>
-                <li>Well Planned Drainage Line.</li>
-                <li>Eye-catching main gate.</li>
-                <li>Distance of some Important Places from Site:
-                  <ul>
+                <li class="mb-2"><strong>•</strong> Diverted <strong>47 plots</strong> of various sizes.</li>
+                <li class="mb-2"><strong>•</strong> Two well-planned gardens — <strong>4100 Sqft</strong> & <strong>3440 Sqft</strong> area.</li>
+                <li class="mb-2"><strong>•</strong> <strong>25 Ft & 30 Ft Wide</strong> C.C. Roads.</li>
+                <li class="mb-2"><strong>•</strong> Electrification as per CSPDCL norms.</li>
+                <li class="mb-2"><strong>•</strong> Well-planned drainage line.</li>
+                <li class="mb-2"><strong>•</strong> Eye-catching main gate with premium finish.</li>
+                <li class="mb-2">
+                  <strong>•</strong> Distance of Important Places:
+                  <ul class="mt-2">
                     <li>Dongargarh Railway Station – 4.5 Kms (approx)</li>
                     <li>Dongargarh Bus Stand – 3.9 Kms (approx)</li>
                     <li>Petrol Pump in front of colony</li>
@@ -237,8 +265,10 @@
           </div>
 
           <!-- Close Button -->
-          <div class="text-center mt-4">
-            <button type="button" class="btn btn-secondary px-4" data-bs-dismiss="modal">Close</button>
+          <div class="text-center mt-5">
+            <button type="button" class="btn btn-secondary px-5 py-2" data-bs-dismiss="modal">
+              Close
+            </button>
           </div>
         </div>
 
