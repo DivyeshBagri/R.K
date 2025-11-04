@@ -118,7 +118,14 @@
 
       <!-- Project 1 -->
 <div class="col-lg-4 col-md-6 mb-4">
-  <div class="card border-0 shadow-lg h-100 text-center">
+  <!-- Whole Card Clickable -->
+  <div 
+    class="card border-0 shadow-lg h-100 text-center"
+    role="button"
+    data-bs-toggle="modal"
+    data-bs-target="#project1Modal"
+    style="cursor: pointer;"
+  >
     
     <!-- Image -->
     <img 
@@ -144,6 +151,7 @@
           class="btn btn-outline-primary px-4 py-2 fw-semibold"
           data-bs-toggle="modal" 
           data-bs-target="#project1Modal"
+          onclick="event.stopPropagation();"  <!-- prevents double trigger -->
         >
           Know More
         </button>
