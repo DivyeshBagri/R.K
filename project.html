@@ -104,46 +104,35 @@
     </div>
 </div>
 
-<!-- ===== PROJECT SECTION ===== -->
-
 <!-- Our Projects Section -->
 <div class="container-fluid bg-light py-5">
-  <div class="container text-center">
+  <div class="container-fluid px-5 text-center"> <!-- full-width container with padding -->
 
     <!-- Section Title -->
     <h1 class="mb-5 display-5 fw-bold">Our Projects</h1>
 
-    <!-- Projects Row -->
-    <div class="row justify-content-center g-5">
-
-        <!-- Our Projects Section -->
-<div class="container-fluid bg-light py-5">
-  <div class="container text-center" style="max-width: 1400px;">  <!-- wider container -->
-
-    <!-- Section Title -->
-    <h1 class="mb-5 display-5 fw-bold">Our Projects</h1>
-
-    <!-- Projects Row -->
     <div class="row justify-content-center g-4">
 
       <!-- Project 1 -->
       <div class="col-lg-4 col-md-6 mb-4">
         <div 
-          class="card border-0 shadow-lg text-center h-100"
+          class="card border-0 shadow-lg h-100 text-center"
           role="button"
           data-bs-toggle="modal"
           data-bs-target="#project1Modal"
-          style="cursor: pointer; border-radius: 10px; overflow: hidden;"
+          style="cursor: pointer; border-radius: 12px; overflow: hidden;"
         >
+
           <!-- Image -->
           <img 
             src="https://raw.githubusercontent.com/DivyeshBagri/R.K/master/img/cam5%20001.png"
-            class="card-img-top img-fluid"
+            class="card-img-top w-100"
             alt="R.K. Sharnam Kalyanpur"
             style="
               object-fit: cover;
-              aspect-ratio: 1 / 1;      /* 👈 makes image perfectly square */
               width: 100%;
+              height: 400px; /* larger height for full visibility */
+              border-radius: 0;
             "
           >
 
@@ -175,7 +164,95 @@
     </div>
   </div>
 </div>
- 
+
+
+    <!-- Our Projects Section -->
+<div class="container-fluid bg-light py-5 px-0"> <!-- removed padding -->
+  <div class="container-fluid text-center" style="max-width: 100%; padding: 0 40px;"> <!-- full width -->
+
+    <!-- Section Title -->
+    <h1 class="mb-5 display-5 fw-bold">Our Projects</h1>
+
+    <!-- Projects Row -->
+    <div class="row justify-content-center g-4 mx-0">
+
+      <!-- Project 1 -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div 
+          class="card border-0 shadow-lg h-100 text-center"
+          role="button"
+          data-bs-toggle="modal"
+          data-bs-target="#project1Modal"
+          style="cursor: pointer; border-radius: 12px; overflow: hidden;"
+        >
+          
+          <!-- Image -->
+          <img 
+            src="https://raw.githubusercontent.com/DivyeshBagri/R.K/master/img/cam5%20001.png"
+            class="card-img-top img-fluid"
+            alt="R.K. Sharnam Kalyanpur"
+            style="
+              width: 100%;
+              height: auto;              /* keeps full image visible */
+              object-fit: contain;       /* shows full image without cropping */
+              background-color: #fff;    /* avoids transparency gaps */
+            "
+          >
+
+          <!-- Card Body -->
+          <div class="card-body d-flex flex-column justify-content-between py-4">
+            <div>
+              <h4 class="card-title mb-3">R.K. Sharnam Kalyanpur</h4>
+              <p class="card-text text-muted px-3">
+                A modern housing project offering sustainable living and community spaces.
+              </p>
+            </div>
+
+            <!-- Know More Button -->
+            <div class="mt-3">
+              <button 
+                type="button" 
+                class="btn btn-outline-primary px-4 py-2 fw-semibold"
+                data-bs-toggle="modal" 
+                data-bs-target="#project1Modal"
+                onclick="event.stopPropagation();"
+              >
+                Know More
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+    
+<!-- ===== PROJECT SECTION ===== -->
+
+<!-- Our Projects Section -->
+<div class="container-fluid bg-light py-5">
+  <div class="container text-center">
+
+    <!-- Section Title -->
+    <h1 class="mb-5 display-5 fw-bold">Our Projects</h1>
+
+    <!-- Projects Row -->
+    <div class="row justify-content-center g-5">
+
+        <!-- Our Projects Section -->
+<div class="container-fluid bg-light py-5">
+  <div class="container text-center" style="max-width: 1400px;">  <!-- wider container -->
+
+    <!-- Section Title -->
+    <h1 class="mb-5 display-5 fw-bold">Our Projects</h1>
+
+    <!-- Projects Row -->
+    <div class="row justify-content-center g-4">
+
+     
         <!-- Project 1 -->
 <div class="col-lg-4 col-md-6 mb-4">
   <!-- Whole Card Clickable -->
